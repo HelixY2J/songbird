@@ -5,5 +5,5 @@ all: libsong songtest
 libsong: libsong.c
 	gcc -c $(CFLAGS) ./libsong.c -o libsong.o
 
-flextest: songtest.c
+songtest: songtest.c
 	gcc $(CFLAGS) -pthread songtest.c libsong.o -o songtest
